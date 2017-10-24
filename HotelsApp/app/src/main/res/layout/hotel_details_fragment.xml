@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deakishin.hotelsapp.ui.components.CustomSwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotel_details_swiperefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/hotel_details_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/hotel_details_error_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/HotelDetailsErrorTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/hotel_details_error"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hotel_details_info_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/hotel_details_name_textView"
+                    style="@style/HotelDetailsTitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/hotel_details_address_textView"
+                    style="@style/HotelDetailsSubtitleTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/hotel_details_stars_textView"
+                    style="@style/HotelDetailsBodyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/hotel_details_distance_textView"
+                    style="@style/HotelDetailsBodyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:id="@+id/hotel_details_suits_textView"
+                    style="@style/HotelDetailsBodyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp">
+
+                    <com.deakishin.hotelsapp.ui.components.ScalableImageView
+                        android:id="@+id/hotel_details_image_imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="fitXY"/>
+
+                    <ProgressBar
+                        android:id="@+id/hotel_details_image_progressBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:indeterminate="true"/>
+
+                    <TextView
+                        android:id="@+id/hotel_details_image_empty_view"
+                        style="@style/HotelDetailsImageEmptyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/hotel_details_image_empty"/>
+                </FrameLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</com.deakishin.hotelsapp.ui.components.CustomSwipeRefreshLayout>

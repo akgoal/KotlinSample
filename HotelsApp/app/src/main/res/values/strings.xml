@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Hotels</string>
+
+    <string name="hotels_error_loading">Error loading hotels.\nPlease check your Internet connection.</string>
+    <string name="hotels_empty">No hotels found =(</string>
+
+    <string name="hotel_name">%1$s</string>
+    <string name="hotel_address">%1$s</string>
+    <string name="hotel_stars">Stars: %1$.1f</string>
+    <string name="hotel_distance">Distance: %1$.2f</string>
+    <string name="hotel_suits">Available suits: %1$d</string>
+    <string name="hotel_details">Distance: %1$.2f. Suits: %2$d</string>
+    <string name="hotel_address_advanced">%1$s\n(%2$.2f&#xb0;%3$s; %4$.2f&#xb0;%5$s)</string>
+
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_sort">Sort</string>
+
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+
+    <string name="sort_dialog_title">Sort by</string>
+    <string name="sort_dialog_option_default">Default</string>
+    <string name="sort_dialog_option_distance">Distance</string>
+    <string name="sort_dialog_option_suits">Suits</string>
+
+    <string name="hotel_details_screen_title"></string>
+    <string name="hotel_details_error">Error loading hotel details.\nPlease check your Internet connection.</string>
+    <string name="hotel_details_image_empty">No image available</string>
+</resources>
